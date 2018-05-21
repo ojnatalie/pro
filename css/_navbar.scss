@@ -1,0 +1,161 @@
+.c-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+    width: 100%;
+    height: 76px;
+    margin: 0 auto;
+
+    transition: .3s;
+
+    background: #ebebeb;
+
+    justify-content: flex-end;
+    will-change: transform;
+}
+.c-navbar__inner {
+    display: flex;
+    height: 100%;
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.c-navbar__contact--span {
+    padding: .3em;
+
+    font-size: 1.5em;
+    font-weight: 700;
+
+    letter-spacing: .5px;
+
+    color: #ebebeb;
+}
+.c-hamburger__svg {
+    margin-right: 10px;
+}
+.c-navbar__tel,
+.c-navbar__mail {
+    font-size: 1.8em;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+.fa-bars {
+    color: #192f25;
+}
+.c-hamburger {
+    display: block;
+    padding: 0;
+    padding-top: 10px;
+
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+}
+
+.c-navbar__logo--img {
+    display: block;
+    height: 60%;
+    padding: 5px 0 0 5px;
+}
+
+.c-navbar__logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+}
+
+.u-icon-logo {
+    width: 100%;
+}
+
+.js-nav {
+    display: flex;
+    width: 100%;
+
+    -ms-align-items: center;
+        align-items: center;
+}
+
+.js-nav--opened {
+    display: -webkit-flex;
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.3em;
+
+    letter-spacing: 1px;
+
+    color: #1b1c1b;
+
+    align-items: center;
+    justify-content: space-around;
+}
+.js-nav a:link,
+a:visited {
+    transition: .5s;
+    /*    border-top: 4px solid #ebebeb;*/
+
+    border-bottom: 4px solid #ebebeb;
+}
+.js-nav a:hover,
+.js-nav a:focus {
+    width: 100%;
+    height: 100%;
+    /*    font-weight: 800;*/
+    height: 100%;
+    padding: 5px 0;
+
+    color: #192f25;
+    /*    border-top: 4px solid #192f25;*/
+    border-bottom: 4px solid #192f25;
+    /*    background: red;*/
+}
+
+.c-navbar__contact {
+    background-color: transparent;
+}
+
+.c-navbar.is-hidden {
+    transform: translateY(-100%);
+}
+
+
+li {
+    list-style: none;
+}
+.c-navbar::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 50%;
+
+    content: "";
+}
+
+.c-navbar__contact {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+
+    background-color: #192f25;
+}

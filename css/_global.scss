@@ -1,0 +1,25 @@
+body {
+    overflow-x: hidden;
+
+    font-family: Nunito, sans-serif;
+    font-size: 62.5%;
+
+    background: #ebebeb;
+}
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+
+    background-color: #100f17;
+}
+body::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-corner {
+    width: 13px;
+
+    background-color: #999;
+}
