@@ -84,4 +84,3 @@ $('.c-hamburger__svg').on('click', function () {
     $nav.toggleClass('js-navlist');
     $logo.toggleClass('o-display-n');
 });
-
